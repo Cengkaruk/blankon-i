@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BlankOn Installer</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<script src="js/kinetic.min.js"></script>
+  <script src="js/partition-editor.js"></script>
+	<script src="js/installer.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		
+		<div class="row-fluid">
+			<div class="span12 topbar">
+				<div class="pull-right">
+					<img src="img/blankon.png" id="logo"/>
+				</div>
+			</div>
+		</div>
+		
+		<hr>
+			
+			<div class="row-fluid">
+				<div class="ui-page" id="first" data-toolbar="no">
+					<div class="span6">
+						<h1><span>Welcome to BlankOn</span></h1>
+						<p><span>Welcome to BlankOn installation program. Please choose your language and region below continue. If your choice is not on the list, you can choose the default values and set again later after the system is fully installed in the Settings application.</span></p>
+						<p>
+						<label><span>Language</span></label>
+						<select id="opt-language">
+						</select>
+						</p>
+						<p>
+						<label><span>Timezone</span></label>
+						<select id="opt-zone">
+						<option>Africa</option>
+						<option>America</option>
+						<option>Asia</option>
+						<option>Australia</option>
+						<option>Atlantic</option>
+						<option>Europe</option>
+						<option>Pacific</option>
+						</select>
+						<select id="opt-timezone" style="display:none">
+						</select>
+						</p>
+						<p>
+						<label><span>Keyboard</span></label>
+						<select id="opt-keyboard">
+							<option></option>
+						</select>
+						</p>
+						<p><span>You can choose whether want to continue using the Live CD or to install into your computer</span></p>
+					</div>
+					<div class="span6" id="first-button">
+						<a class="btn btn-large"><img src="img/icons/livecd.png"><br><br><span>Continue using Live CD</span></a>
+						<a class="btn btn-large" id="btn-install"><img src="img/icons/harddisk.png"><br><br><span>Install BlankOn</span></a>
+					</div>
+				</div>
+			</div>
+			
+		<hr>
+			
+		<div class="row-fluid">
+			<div class="span12">
+				<nav id="toolbar">
+					<div class="ui-switch-mode pull-left">
+						<div id="ui-switch-mode-button"></div>
+						<span id="ui-switch-mode-text" class="ui-switch-mode-hidden"></span>
+						<span id="ui-switch-mode-quick-text" style="display:none">Click to switch to Quick Mode</span>
+						<span id="ui-switch-mode-advanced-text">Click to switch to Advanced Mode</span>
+					</div>
+					<div class="ui-navigation-buttons pull-right">
+						<a class="btn btn-large ui-button-toolbar-enabled" id="prev"><span>Previous</span></a>
+						<a class="btn btn-large ui-button-toolbar-disabled" id="next"><span>Next</span></a>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
+

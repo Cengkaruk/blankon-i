@@ -1,0 +1,12 @@
+body {
+	background: url(../img/grey.png) repeat;
+}
+
+canvas {
+	border: 1px solid #9C9898;
+}
+
+#first #first-button {
+	padding-top: 100px;
+	text-align: center;
+}
