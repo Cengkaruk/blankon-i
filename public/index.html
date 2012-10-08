@@ -26,31 +26,43 @@
 					<div class="span6">
 						<h1><span>Welcome to BlankOn</span></h1>
 						<p><span>Welcome to BlankOn installation program. Please choose your language and region below continue. If your choice is not on the list, you can choose the default values and set again later after the system is fully installed in the Settings application.</span></p>
-						<p>
-						<label><span>Language</span></label>
-						<select id="opt-language">
-						</select>
-						</p>
-						<p>
-						<label><span>Timezone</span></label>
-						<select id="opt-zone">
-						<option>Africa</option>
-						<option>America</option>
-						<option>Asia</option>
-						<option>Australia</option>
-						<option>Atlantic</option>
-						<option>Europe</option>
-						<option>Pacific</option>
-						</select>
-						<select id="opt-timezone" style="display:none">
-						</select>
-						</p>
-						<p>
-						<label><span>Keyboard</span></label>
-						<select id="opt-keyboard">
-							<option></option>
-						</select>
-						</p>
+						<div class="form-horizontal">
+							<div class="control-group">
+							<label class="control-label"><span>Language</span></label>
+							<div class="controls">
+								<select id="opt-language">
+								</select>
+							</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label"><span>Timezone</span></label>
+								<div class="controls">
+									<select id="opt-zone">
+									<option>Africa</option>
+									<option>America</option>
+									<option>Asia</option>
+									<option>Australia</option>
+									<option>Atlantic</option>
+									<option>Europe</option>
+									<option>Pacific</option>
+									</select>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<select id="opt-timezone" style="display:none">
+									</select>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label"><span>Keyboard</span></label>
+								<div class="controls">
+									<select id="opt-keyboard">
+										<option></option>
+									</select>
+								</div>
+							</div>
+						</div>
 						<p><span>You can choose whether want to continue using the Live CD or to install into your computer</span></p>
 					</div>
 					<div class="span6" id="first-button">
@@ -138,6 +150,31 @@
 			</div>
 			
 			<div class="row-fluid">
+				<div class="ui-page" id="installation" data-toolbar="no">
+					<h1><span>Installation</span></h1>
+					<p><span>Please wait a moment while the installation is applied to your system</span></p>
+	
+					<span id="current-step">Preparing</span>...
+					<div class="ui-progress-bar-enclosure">
+						<div class="progress">
+							<div id="progress-bar" class="bar" style="width: 60%;"></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="row-fluid">
+				<div class="ui-page" id="done" data-toolbar="no">
+					<h1><span>Done</span></h1>
+					<p><span>Your system is ready, now please continue to reboot into your newly installed system</span></p>
+					<a class="btn btn-shutdown"><span>Continue using Live CD</span></a>
+					<a class="btn" id="btn-reboot"><span>Reboot to newly installed system</span></a>
+				</div>
+			</div>
+
+		<span class="ui-advanced-mode-text-hidden"  id="ui-advanced-mode-text">ADVANCED MODE</span>
+			
+			<div class="row-fluid">
 				<div class="ui-page" id="error" data-toolbar="no">
 					<div class="span12">
 						<h1><span>Sorry,</span></h1>
@@ -148,7 +185,6 @@
 					</div>
 				</div>
 			</div>
-		<hr>
 			
 		<div class="row-fluid">
 			<div class="span12">
